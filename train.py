@@ -9,7 +9,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 from data import load_data, get_subject_files
-from model import create_model
+from model import TinySleepNet
 from minibatching import (iterate_minibatches,
                           iterate_batch_seq_minibatches,
                           iterate_batch_multiple_seq_minibatches)
@@ -134,10 +134,10 @@ def train(
     logger.info(f'  Weighted cross entropy: {config["class_weights"]}')
 
     # Create a model
-    model = create_model(
+    model = TinySleepNet(
         config=config,
-        use_rnn=True,
         output_dir=output_dir,
+        use_rnn=True,
         testing=False,
         use_best=False,
     )

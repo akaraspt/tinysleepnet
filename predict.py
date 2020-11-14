@@ -8,7 +8,7 @@ import sklearn.metrics as skmetrics
 import tensorflow as tf
 
 from data import load_data, get_subject_files
-from model import create_model
+from model import TinySleepNet
 from minibatching import (iterate_minibatches,
                           iterate_batch_seq_minibatches,
                           iterate_batch_multiple_seq_minibatches)
@@ -90,7 +90,7 @@ def predict(
 
         logger.info("Test SIDs: ({}) {}".format(len(test_sids), test_sids))
 
-        model = create_model(
+        model = TinySleepNet(
             config=config,
             output_dir=os.path.join(model_dir, str(fold_idx)),
             use_rnn=True,
