@@ -6,9 +6,13 @@ Code for the model in the paper *TinySleepNet: An Efficient Deep Learning Model 
 
 This work has been accepted for publication in [2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)](https://ieeexplore.ieee.org/document/9176741).
 
-The architecture of TinySleepNet:
+## Model Architecture
 ![TinySleepNet](./img/tinysleepnet.png)
 Note: Fs is the sampling rate of the input EEG signals
+
+## Performance Comparison
+![Performance Comparison](./img/compare_performance.png)
+Note: ACC = accuracy, MF1 = Macro F1-Score
 
 
 ## Environment
