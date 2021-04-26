@@ -24,7 +24,7 @@ Note: ACC = accuracy, MF1 = Macro F1-Score
 ## Create a virtual environment with conda
 
 ```bash
-conda create -n tinysleepnet python==3.6
+conda create -n tinysleepnet python=3.6
 conda activate tinysleepnet
 pip install -r requirements.txt
 ```
