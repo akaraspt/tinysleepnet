@@ -6,6 +6,8 @@ Code for the model in the paper *TinySleepNet: An Efficient Deep Learning Model 
 
 This work has been accepted for publication in [2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)](https://ieeexplore.ieee.org/document/9176741).
 
+This work has been used as a baseline for quantifying the transferability in comparison with U-Time model. The results have been published in the paper *Quantifying the impact of data characteristics on the transferability of sleep stage scoring models by Akara Supratak and Peter Haddawy from The Faculty of ICT, Mahidol University* [[paper](https://www-sciencedirect-com.ejournal.mahidol.ac.th/science/article/pii/S0933365723000544)][[github](https://github.com/akaraspt/transferability_sleep)].
+
 ## Model Architecture
 ![TinySleepNet](./img/tinysleepnet.png)
 Note: Fs is the sampling rate of the input EEG signals
